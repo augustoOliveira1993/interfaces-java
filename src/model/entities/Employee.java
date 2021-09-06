@@ -35,4 +35,12 @@ public class Employee implements Comparable<Employee>{
 	public int compareTo(Employee other) {
 		return -this.salary.compareTo(other.getSalary());
 	}
+	
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(this.nome + ", ");
+		sb.append(String.format("R$ %.2f", this.salary));
+		return sb.toString();
+	}
 }

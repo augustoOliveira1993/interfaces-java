@@ -25,7 +25,7 @@ public class ProgramHerancaMult {
 			}
 			Collections.sort(list);
 			for (Employee s : list) {
-				System.out.println(s.getNome() + ", " + s.getSalary());
+				System.out.println(s);
 			}
 		} catch (IOException e) {
 			System.out.println("Error: " + e.getMessage());
